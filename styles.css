@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'SF-Pro-Display';
+    src: url(SFPro/OpenType/SF-Pro-Display-Regular.otf);
+}
+
 *{
     margin:0%;
     padding:0%;
+    box-sizing:border-box;
+    font-family: 'SF-Pro-Display';
 }
 
 html,body{
@@ -18,6 +25,45 @@ html,body{
     height:100vh;
     width:100vw;
     background-color: #000;
+}
+
+
+#page>nav{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height:7vh;
+    width:50vw;
+    background-color: #000;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page>nav>h3{
+    position:relative;
+    top:12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#page>nav>button{
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+}
+
+#page>video{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #page1{
